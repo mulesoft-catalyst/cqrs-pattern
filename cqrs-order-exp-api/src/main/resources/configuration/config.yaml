@@ -1,0 +1,25 @@
+https:
+  port: "8082"
+  
+amq:
+  endpoint: "https://mq-us-west-2.anypoint.mulesoft.com/api/v1"
+  clientid: ""
+  secret: ""
+  orderqueue: "order-queue"
+
+api:
+  name: "cqrs-order-exp-api"
+
+retry:
+  threshold: "1"
+  ttl: "5"
+
+orderDetailsService:
+  host: "cqrs-order-details-sys-api.us-w1.cloudhub.io"
+  port: "443"
+  path: "api/orders"
+  
+keystore:
+  keyPassword: "mule123"
+  password: "mule123"
+  alias: "sender"

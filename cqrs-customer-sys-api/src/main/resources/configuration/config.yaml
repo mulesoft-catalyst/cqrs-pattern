@@ -1,0 +1,21 @@
+https:
+  port: "8082"
+  
+api:
+  name: "cqrs-customer-sys-api"
+  
+mysql:
+  host: ""
+  port: ""
+  user: ""
+  password : ""
+  database: ""
+  customertable: ""
+
+retry:
+  threshold: "1"
+  ttl: "5"
+  
+keystore:
+  keyPassword: "mule123"
+  password: "mule123"

@@ -1,0 +1,23 @@
+  
+amq:
+  endpoint: "https://mq-us-west-2.anypoint.mulesoft.com/api/v1"
+  clientid: ""
+  secret: ""
+  orderqueue: "order-queue"
+
+api:
+  name: "cqrs-order-prc-api"
+
+retry:
+  threshold: "1"
+  ttl: "5"
+
+customerService:
+  host: "cqrs-customer-sys-api.us-w1.cloudhub.io"
+  port: "443"
+  path: "api/customers"
+  
+orderService:
+  host: "cqrs-order-sys-api.us-w1.cloudhub.io"
+  port: "443"
+  path: "api/orders"
